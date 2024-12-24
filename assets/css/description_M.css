@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+:root{
+    --nav-bar:rgba(243,213,181,0.75);
+    --text-color: #343a40;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Antic Didone", serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+/* ***************** navigation bar style ***************** */
+.home-page .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(222,171,144,0.5),rgba(205,151,119,0.5)),url(modern\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.category-page .no-banner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#main-nav {
+    display: flex;
+    background: var(--nav-bar);
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: right;
+    position: absolute;
+    z-index: 1;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 23px;
+    padding: 9px 22px;
+    transition-duration: 0.3s;
+    margin: 2px;
+    font-weight: 900;
+}
+
+#main-nav a:hover{
+    text-decoration: 2px underline #c38e70;
+    transition-duration: 0.5s;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin-right: auto;
+    z-index: 10;
+}
+
+/* ***************** description ***************** */
+#products {
+    margin-top: 5rem;
+    position: relative;
+    width: 100%;
+  }
+  
+.producat_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    width: 90%;
+}
+
+.producat_image{
+    position: relative;
+    width: 70%; 
+    height: 500px;
+    margin-left: auto;
+}
+
+.producat_image img {
+    display: block;
+    object-fit: cover;
+    width: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.img_small {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    width: 70%;
+    margin-left: auto;
+}
+
+.img_small img {
+    object-fit: cover;
+    width: 22%;
+    cursor: pointer;
+}
+
+.img_small img.active {
+    border: 2px solid var(--Orange);
+    opacity: 0.3;
+}
+
+.company_txt {
+    color: var(--Orange);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.producat_content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.producat_content h2 {
+    font-size: 25px;
+    margin: 1rem 0;
+    width: 60%;
+}
+
+.producat_des {
+    margin: 2rem 0;
+    width: 65%;
+    font-size: 25px;
+    line-height: 1.56;
+    color: var(--Darkgrayish);
+}
+
+.dicscount_price {
+    display: flex;
+    align-items: center;
+}
+
+.normal_price {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.dicscount_price span {
+    font-weight: normal;
+    font-size: 1.5rem;
+    background-color: #ffeee2;
+    padding: 0 0.5rem;
+    color: var(--Orange);
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.total_price {
+    text-decoration: line-through;
+    color: var(--Grayish);
+    margin: 1rem 0;
+}
+
+.qty {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button {
+    outline: none;
+    border: none;
+    background-color: var(--Lightgrayish);
+    color: var(--Orange);
+    padding: 0.7rem 1.2rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btns button:active {
+    transform: scale(0.98);
+}
+
+.btns .qty_numbers {
+    color: var(--Darkgrayish);
+    font-weight: 600;
+}
+
+.add_cart {
+    outline: none;
+    border: none;
+    background-color: var(--Orange);
+    font-family: inherit;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.1rem;
+    border-radius: 5px;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+.add_cart:active {
+    transform: scale(0.98);
+}
+
+.add_cart svg {
+    margin-right: 1rem;
+}
