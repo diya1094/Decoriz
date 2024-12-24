@@ -1,6 +1,10 @@
 <h1 align="center" id="title">Decoriz</h1>
 
-<p id="description">Currently working on developing a home decor ecommerce named Decoriz with my friend @Rupal Shrirao.<br>This project is for our 5th Semester subject named Web Technology.</p>
+<p id="description">Decoriz is a seamless fusion of vintage and modern aesthetics, offering: <br> 
+
+- Modern-to-Vintage Live Room Switch Design: Effortlessly transition between contemporary and classic styles.  <br>
+
+- E-commerce Integration: Shop your favorite decor items directly through the platform.  </p>
 
   
   
@@ -11,4 +15,4 @@ Technologies used in the project:
 *   HTML
 *   CSS
 *   JavaScript
-*   php
+*   PHP
